@@ -1,6 +1,7 @@
 import Hero from "./sections/Hero";
 import HowItWorks from "./sections/HowItWorks";
 import ActivityExamples from "./sections/ActivityExamples";
+import Safety from "./sections/Safety";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Hero />
       <HowItWorks />
       <ActivityExamples />
+      <Safety />
     </main>
   );
 }
