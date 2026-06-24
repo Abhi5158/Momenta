@@ -13,11 +13,11 @@ function App() {
         MOMENTA
       </p>
 
-      <h1 className="text-5xl font-bold leading-tight md:text-7xl">
+      <h1 className="text-5xl font-bold leading-tight md:text-6xl">
         Life&apos;s better when plans happen.
       </h1>
 
-      <p className="mt-6 max-w-2xl text-lg text-zinc-400 md:text-xl">
+      <p className="mt-6 max-w-xl text-lg text-zinc-400 md:text-xl">
         Turn &quot;we should&quot; into &quot;we did.&quot;
         Create activities, discover people nearby, and make every plan happen.
       </p>
@@ -62,7 +62,7 @@ function App() {
       </div>
 
       {/* Cricket Card */}
-      <div className="absolute bottom-12 right-10 rotate-[4deg] w-64 rounded-3xl border border-zinc-700 bg-zinc-800/80 p-5 backdrop-blur-md">
+      <div className="absolute bottom-15 right-10 rotate-[4deg] w-64 rounded-3xl border border-zinc-700 bg-zinc-800/80 p-5 backdrop-blur-md">
         <p className="text-3xl">🏏</p>
         <h3 className="mt-3 font-semibold">Cricket Match</h3>
         <p className="mt-2 text-sm text-zinc-400">
