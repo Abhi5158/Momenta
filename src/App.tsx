@@ -1,122 +1,83 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
+    <main className="min-h-screen bg-[#09090B] text-white overflow-hidden">
+      <section className="relative mx-auto flex min-h-screen max-w-7xl items-center px-8 lg:px-20">
+
+            {/* Background Glow */}
+    <div className="absolute left-1/2 top-1/2 h-[650px] w-[650px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/10 blur-[150px]" />
+
+    {/* Left Side */}
+    <div className="relative z-10 max-w-3xl lg:-translate-y-8">
+
+      <p className="mb-6 text-base font-semibold uppercase tracking-[0.3em] text-zinc-400">
+        MOMENTA
+      </p>
+
+      <h1 className="text-5xl font-bold leading-tight md:text-7xl">
+        Life&apos;s better when plans happen.
+      </h1>
+
+      <p className="mt-6 max-w-2xl text-lg text-zinc-400 md:text-xl">
+        Turn &quot;we should&quot; into &quot;we did.&quot;
+        Create activities, discover people nearby, and make every plan happen.
+      </p>
+
+      <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+        <button className="rounded-full bg-violet-600 px-8 py-4 font-medium transition-all duration-300 hover:bg-violet-500 hover:scale-105">
+          Become an Early Explorer
         </button>
-      </section>
 
-      <div className="ticks"></div>
+        <button className="rounded-full border border-zinc-700 px-8 py-4 font-medium text-zinc-300 transition-all duration-300 hover:border-zinc-500 hover:text-white hover:scale-105">
+          See How It Works
+        </button>
+      </div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+    </div>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    {/* Right Side Activity Cards */}
+    <div className="relative hidden h-[650px] flex-1 lg:flex items-center justify-center">
+
+      {/* Movie Card */}
+      <div className="absolute top-0 right-12 rotate-[-4deg] w-64 rounded-3xl border border-zinc-700 bg-zinc-800/80 p-5 backdrop-blur-md">
+        <p className="text-3xl">🎬</p>
+        <h3 className="mt-3 font-semibold">Movie Night</h3>
+        <p className="mt-2 text-sm text-zinc-400">
+          Need 1 Explorer
+        </p>
+        <p className="mt-4 text-xs text-zinc-500">
+          Tonight • 8:30 PM
+        </p>
+      </div>
+
+      {/* Coffee Card */}
+      <div className="absolute top-52 left-10 rotate-[4deg] w-60 rounded-3xl border border-zinc-700 bg-zinc-800/80 p-5 backdrop-blur-md">
+        <p className="text-3xl">☕</p>
+        <h3 className="mt-3 font-semibold">Coffee Chat</h3>
+        <p className="mt-2 text-sm text-zinc-400">
+          Need 1 Explorer
+        </p>
+        <p className="mt-4 text-xs text-zinc-500">
+          Today • 6:00 PM
+        </p>
+      </div>
+
+      {/* Cricket Card */}
+      <div className="absolute bottom-12 right-10 rotate-[4deg] w-64 rounded-3xl border border-zinc-700 bg-zinc-800/80 p-5 backdrop-blur-md">
+        <p className="text-3xl">🏏</p>
+        <h3 className="mt-3 font-semibold">Cricket Match</h3>
+        <p className="mt-2 text-sm text-zinc-400">
+          Need 2 Players
+        </p>
+        <p className="mt-4 text-xs text-zinc-500">
+          Tomorrow • 7:00 AM
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+</main>
+  );
 }
 
-export default App
+export default App;
