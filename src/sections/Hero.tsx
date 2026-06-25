@@ -9,9 +9,16 @@ const Hero = () => {
     {/* Left Side */}
     <div className="relative z-10 max-w-3xl lg:-translate-y-8">
 
-      <p className="mb-6 text-base font-semibold uppercase tracking-[0.3em] text-zinc-400">
-        MOMENTA
-      </p>
+      <div className="mb-8 flex items-center gap-3">
+          <img
+            src="/src/assets/logo.png"
+            alt="Momenta"
+            className="h-16 w-18 rounded-full border border-zinc-700 object-cover"
+          />
+          <span className="text-sm font-semibold tracking-[0.3em] text-zinc-400">
+            MOMENTA
+          </span>
+        </div>
 
       <h1 className="text-5xl font-bold leading-tight md:text-6xl">
         Life&apos;s better when plans happen.
