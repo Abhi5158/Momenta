@@ -2,6 +2,8 @@ import Hero from "./sections/Hero";
 import HowItWorks from "./sections/HowItWorks";
 import ActivityExamples from "./sections/ActivityExamples";
 import Safety from "./sections/Safety";
+import Waitlist from "./sections/Waitlist";
+import Footer from "./sections/Footer";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <HowItWorks />
       <ActivityExamples />
       <Safety />
+      <Waitlist />
+      <Footer />
     </main>
   );
 }

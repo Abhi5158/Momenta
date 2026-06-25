@@ -1,7 +1,9 @@
 
 const HowItWorks = () => {
 return (
-<section className="mx-auto max-w-7xl px-8 py-32 lg:px-20">
+<section
+id="HowItWorks"
+className="mx-auto max-w-7xl px-8 py-32 lg:px-20">
       <div className="text-center">
     <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-violet-400">
       HOW IT WORKS

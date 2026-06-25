@@ -23,11 +23,28 @@ const Hero = () => {
       </p>
 
       <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-        <button className="rounded-full bg-violet-600 px-8 py-4 font-medium transition-all duration-300 hover:bg-violet-500 hover:scale-105">
-          Become an Early Explorer
-        </button>
+        <button
+            onClick={() =>
+                document
+                  .getElementById("Waitlist")
+                  ?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+              }
+              className="rounded-full bg-violet-600 px-8 py-4 font-medium transition-all duration-300 hover:bg-violet-500 hover:scale-105"
+              >
+              Become an Early Explorer
+              </button>
 
-        <button className="rounded-full border border-zinc-700 px-8 py-4 font-medium text-zinc-300 transition-all duration-300 hover:border-zinc-500 hover:text-white hover:scale-105">
+        <button 
+        onClick={() =>
+                document
+                  .getElementById("HowItWorks")
+                  ?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+              }
+        className="rounded-full border border-zinc-700 px-8 py-4 font-medium text-zinc-300 transition-all duration-300 hover:border-zinc-500 hover:text-white hover:scale-105">
           See How It Works
         </button>
       </div>
