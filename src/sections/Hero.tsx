@@ -13,7 +13,7 @@ const Hero = () => {
           <img
             src="/src/assets/logo.png"
             alt="Momenta"
-            className="h-16 w-18 rounded-full border border-zinc-700 object-cover"
+            className="h-16 w-18"
           />
           <span className="text-sm font-semibold tracking-[0.3em] text-zinc-400">
             MOMENTA
