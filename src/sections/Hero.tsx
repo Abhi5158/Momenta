@@ -1,3 +1,4 @@
+import logo from "../assets/logo.png";
 const Hero = () => {
   return (
      <main className="min-h-screen bg-[#09090B] text-white overflow-hidden">
@@ -11,7 +12,7 @@ const Hero = () => {
 
       <div className="mb-8 flex items-center gap-3">
           <img
-            src="/src/assets/logo.png"
+            src={logo}
             alt="Momenta"
             className="h-16 w-18"
           />
